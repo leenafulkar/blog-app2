@@ -16,6 +16,7 @@
   position: absolute;
   top: 40%;
   left: 50%;
+  transform: translate(-50%, -50%);
   z-index: 1;
   text-align: center;
   color: #fff;
@@ -26,4 +27,74 @@
 }
 .login .text h1 {
   font-size: 40px;
+}
+.login form {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin-top: -50px;
+  position: relative;
+  z-index: 2;
+}
+.login form span {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #333;
+}
+.login form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+}
+.login form .button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.login form .button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .login .backImg {
+    height: 30vh;
+  }
+  .login .backImg img {
+    height: 30vh;
+  }
+  .login .text h1 {
+    font-size: 30px;
+  }
+  .login .text h3 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .login .text h1 {
+    font-size: 24px;
+  }
+  .login .text h3 {
+    font-size: 18px;
+  }
+  .login form {
+    padding: 15px;
+  }
+  .login form .button {
+    padding: 8px;
+    font-size: 14px;
+  }
 }

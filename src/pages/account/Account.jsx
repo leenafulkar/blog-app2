@@ -1,6 +1,6 @@
-import React from "react"
-import image from "../../assets/images/input.png"
-import "./account.css"
+import React from "react";
+import image from "../../assets/images/input.png";
+import "./account.css";
 
 export const Account = () => {
   return (
@@ -12,7 +12,7 @@ export const Account = () => {
             <div className='left'>
               <div className='img flexCenter'>
                 <input type='file' accept='image/*' src={image} alt='img' />
-                <img src={image} alt='image' class='image-preview' />
+                <img src={image} alt='image' className='image-preview' />
               </div>
             </div>
             <div className='right'>
@@ -28,5 +28,5 @@ export const Account = () => {
         </div>
       </section>
     </>
-  )
-}
+  );
+};

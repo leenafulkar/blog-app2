@@ -1,6 +1,16 @@
 .blog {
   margin: 50px 0;
 }
+.blog .container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+.blog .grid3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
 .blog .boxItems {
   transition: 0.5s;
 }
@@ -46,4 +56,30 @@
 .blog .date label {
   display: block;
   margin-right: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .blog .grid3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .blog .grid3 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .blog .container {
+    padding: 0 10px;
+  }
+  .blog p {
+    font-size: 15px;
+    line-height: 22px;
+  }
+  .blog .date label {
+    margin-right: 10px;
+  }
 }
